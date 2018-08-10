@@ -1,6 +1,7 @@
 #!/bin/sh
 
-# The purpose of this script is to provide vm networking in Azure.
+# The purpose of this script is to provide an ubuntu in Azure,
+# Customized with cloud-init
 # This script is created by Frederik Vos,
 # Last updated: 08-10-2018
 
