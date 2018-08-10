@@ -10,7 +10,7 @@ admin="linuxadmin"
 image="UbuntuLTS"
 customdata="cloudinit.txt"
 
-# az vm create --resource-group $resourcegroup --name $vmname --image $image --admin-username $admin --generate-ssh-keys --custom-data $customdata
+az vm create --resource-group $resourcegroup --name $vmname --image $image --admin-username $admin --generate-ssh-keys --custom-data $customdata
 
 nsg=$(az network nsg list --resource-group LinuxonAzure --query "[].name" --output tsv | grep $vmname)
 
